@@ -26,6 +26,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.tooling.preview.Preview
 import com.example.architecture_example.ui.theme.MyApplicationTheme
 
 class MainActivity : ComponentActivity() {
@@ -112,7 +113,6 @@ fun ProductScreen(
         }
     }
 }
-
 @Composable
 fun ProductDetailItem(label: String, value: String) {
     Column {
@@ -125,6 +125,22 @@ fun ProductDetailItem(label: String, value: String) {
             text = value,
             style = MaterialTheme.typography.bodyLarge,
             fontWeight = FontWeight.Medium
+        )
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun ProductScreenPreview() {
+    MyApplicationTheme {
+        ProductScreen(
+            state = MainState(
+                name = "Тестовый товар",
+                brand = "Тестовый бренд",
+                category = "Тестовая категория",
+                count = 5
+            ),
+            onRefresh = {}
         )
     }
 }

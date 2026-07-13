@@ -5,8 +5,10 @@ import com.example.architecture_example.domain.model.CardData
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
-class GetCardInteractor(private val cardRepository: CardRepository = CardRepository()) {
-
+class GetCardInteractor(
+    private val cardRepository: CardRepository = CardRepository()
+)
+{
     suspend fun getCard(): CardData = withContext(Dispatchers.IO) {
         val card = cardRepository.getCard()
 
