@@ -3,11 +3,11 @@ package com.example.architecture_example.presentation
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.architecture_example.data.CardRepositoryImpl
+import com.example.architecture_example.data.model.MainState
 import com.example.architecture_example.domain.GetCardInteractor
 import com.example.architecture_example.domain.GetProductCountInteractor
 import com.example.architecture_example.domain.model.CardData
 import com.example.architecture_example.domain.model.ProductCountData
-import com.example.architecture_example.domain.repository.CardRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -40,6 +40,15 @@ class MainViewModel : ViewModel() {
                         brand = card.brand,
                         category = card.category,
                         count = amount.count,
+                        features = listOf(
+                            "Высокое качество материалов",
+                            "Гарантия от производителя 2 года",
+                            "Экологически чистое производство",
+                            "Быстрая доставка по всей стране",
+                            "Поддержка 24/7",
+                            "Скидка на следующую покупку",
+                            "Подарочная упаковка в комплекте"
+                        ),
                         isLoading = false
                     )
                 }
