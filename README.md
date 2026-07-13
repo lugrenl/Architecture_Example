@@ -31,3 +31,6 @@
 - MVVM / MVI
 - Coroutines / Flow
 - Lifecycle ViewModel
+
+## Скриншот экрана интерфейса
+
