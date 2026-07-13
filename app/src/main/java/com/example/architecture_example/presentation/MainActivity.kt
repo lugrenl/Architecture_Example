@@ -113,6 +113,7 @@ fun ProductScreen(
         }
     }
 }
+
 @Composable
 fun ProductDetailItem(label: String, value: String) {
     Column {
