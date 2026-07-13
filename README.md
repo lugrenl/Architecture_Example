@@ -42,4 +42,5 @@
 - Lifecycle ViewModel
 
 ## Скриншот экрана
-![Screen Shot](screenshots/main_screen.png)
+<img width="540" height="1200" alt="image" src="https://github.com/user-attachments/assets/e1020c02-def8-43a9-865a-b00f04203ef1" />
+
