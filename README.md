@@ -33,4 +33,5 @@
 - Lifecycle ViewModel
 
 ## Скриншот экрана интерфейса
+<img width="1080" height="2400" alt="Screenshot" src="https://github.com/user-attachments/assets/322b4f39-c15a-4b3e-acb6-bd09fde21492" />
 
